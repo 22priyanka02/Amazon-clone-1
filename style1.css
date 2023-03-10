@@ -1,0 +1,226 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+*{
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+
+:root {
+    --major-bg-color: black;
+    --minor-bg-color: white;
+    --amazon-major-color: orange;
+}
+
+body {
+    background-color: var(--minor-bg-color)
+}
+
+
+.head{
+    width: 100%;
+    height: 50px;
+    background-color: var(--major-bg-color);
+    display: flex;
+    justify-content: center;
+}
+.head .nav {
+    margin-top: 2px;
+    display: flex;
+    justify-content: center;
+}
+.head .nav .container {
+    width: 1200px;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.head .nav .container .amazon-logo {
+    width: 100px;
+}
+.head .nav .container .search {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+}
+.head .nav .container .search .search-input {
+    width: 100%;
+    height: 40px;
+    border: 1px solid white;
+    padding: 0 10px;
+}
+.head .nav .container .search .button {
+    width: 40px;
+    height: 42px;
+    /* border-radius: 5px; */
+    background-color: var(--amazon-major-color);
+    border: 1px solid white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    color: #232323;
+}
+.head .nav .container .cart {
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.head .nav .container .cart svg {
+    width: 40px;
+    height: 40px;
+}
+
+
+.part-1 {
+    width: 100%;
+    height: auto;
+    background-image: url(https://m.media-amazon.com/images/I/61oXiG7vPkL._SX3000_.jpg);
+    display: flex;
+}
+.part-1 .container-1 {
+    margin-top: 300px;
+    margin-right: 20px;
+    margin-left: 20px;
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 20px;
+}
+.part-1 .container-1 .section-1 {
+    width: 100%;
+    background-color: white;
+    padding: 20px;
+}
+
+.part-1 .container-1 .section-1 img {
+    margin-top: 20px;
+    width: 100%;
+    height: auto;
+}
+.part-1 .container-1 .section-1 p {
+    margin-top: 10px;
+    font-size: 14px;
+    color: blue;
+}
+.part-1 .container-1 .section-1 button {
+    margin-top: 10px;
+    width: 100%;
+    border: none;
+    background-color: var(--amazon-major-color);
+    padding: 8px;
+    border-radius: 10px;
+}
+
+
+.part-2 {
+    margin: 20px;
+    padding: 20px;
+    background-color: white;
+}
+.part-2 .container-2 h3 {
+    margin-bottom: 10px;
+}
+.part-2 .container-2 .sections {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 20px;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+}
+
+.part-2 .container-2 .section-2 {
+    display: inline-block;
+    width: 300px !important;
+    flex: 0 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.part-2 .container-2 .section-2 img {
+    width: auto;
+    height: auto;
+    max-width: 270px;
+    max-height: 200px;
+}
+
+
+.part-3 {
+    background-color: white;
+}
+.part-3 .container-3 {
+    margin: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    padding: 20px;
+}
+.part-3 .container-3 .product-detail-cards {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 20px;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+}
+.part-3 .container-3 .product-detail-cards .product-detail-card {
+    display: inline-block;
+    width: 200px !important;
+    flex: 0 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 4px;
+}
+.part-3 .container-3 .product-detail-cards .product-detail-card .product-detail-img {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+.part-3 .container-3 .product-detail-cards .product-detail-card img {
+    width: 100%;
+    height: auto;
+    max-width: 160px;
+    max-height: 140px;
+}
+.part-3 .container-3 .product-detail-cards .product-detail-card a {
+    text-decoration: none;
+    color: #007185;
+    font-size: 14px; ;
+}
+.part-3 .container-3 .product-detail-cards .product-detail-card a:hover {
+    color: orange;
+}
+.part-3 .container-3 .product-detail-cards .product-detail-card .product-deliver-by {
+    color: black;
+    font-size: 10px;
+}
+
+.part-4 {
+    padding: 20px;
+}
+.part-4 .container-4 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.part-4 .container-4 p{
+    margin: 4px;
+    font-size: 14px;
+}
+.part-4 .container-4 button{
+    width: 300px;
+    border: none;
+    background-color: var(--amazon-major-color);
+    padding: 8px;
+    border-radius: 10px;
+}
+
